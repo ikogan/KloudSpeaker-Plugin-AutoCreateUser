@@ -79,10 +79,10 @@ split in the string.
 Hash of all folders that should be automatically created (and removed) for each user.
 Each entry has 3 options:
 
-*Name*: The name used for display purposes.
-*Path*: The local system path for the folder. Note that `${username}` will be expanded
+- *Name*: The name used for display purposes.
+- *Path*: The local system path for the folder. Note that `${username}` will be expanded
         to the value of `REMOTE_USER`.
-*Permissions*: Optional. Lists groups in which a user must be in order to get this folder
+- *Permissions*: Optional. Lists groups in which a user must be in order to get this folder
         created. Users in _any_ of the listed groups will be added to the folder. If they
         removed from the groups, they will be removed from these folders.
 
