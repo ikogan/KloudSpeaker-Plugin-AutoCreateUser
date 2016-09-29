@@ -8,10 +8,16 @@ and is in any groups and folders managed by the plugin.
 ## Installation
 
 The best way to install this plugin is to create a directory for Kloudspeaker customizations
-somewhere on your filesystem and define the `customizations_folder` and
+somewhere on your filesystem and define the `customizations_folder`,
 `customizations_folder_url` properties in your configuration and configure this as a
-custom plugin as in the below example (`custom => TRUE`). See
+custom plugin as in the below example (`custom => TRUE`), and place the
+`AutoCreateUser.plugin.class.php` into `${YourCustomDirectory}/plugins/AutoCreateUser`. See
 [Kloudspeaker's documentation](https://github.com/sjarvela/kloudspeaker/wiki/Customizing-resources) for more information.
+
+Alternatively, simply place `AutoCreateUser.plugin.class.php` into
+`${KLOUDSPEAKER_INSTALL_DIR}/backend/plugins/AutoCreateUser`.
+
+*NOTE: The directory into which the php file is placed must be named `AutoCreateUser`*.
 
 ## Configuration
 
